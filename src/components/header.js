@@ -1,26 +1,26 @@
 import React from 'react';
+import { BrowserRouter, Switch, Route, NavLink} from 'react-router-dom/cjs/react-router-dom.min';
 import s from './header.module.css';
-import {Route} from "react-router-dom";
-import Main from './main';
+import Home from './header-items/home';
 import Question from './header-items/question';
 import Result from './header-items/result';
 import About from './header-items/about';
-import { BrowserRouter} from 'react-router-dom/cjs/react-router-dom.min';
-
 
 function Header() {
   return (
     <BrowserRouter>
       <div className = {s.header}>
-          <a href = "/main">HOME</a>
-          <a href = "/question">QUESTION</a>
-          <a href = "/result">RESULT</a>
-          <a href = "/about">ABOUT</a>
+          <NavLink className = {s.link} to = "/" exact activeClassName={s.active}>HOME</NavLink>
+          <NavLink className = {s.link} to = "/question" exact activeClassName={s.active}>QUESTION</NavLink>
+          <NavLink className = {s.link} to = "/result" exact activeClassName={s.active}>RESULT</NavLink>
+          <NavLink className = {s.link} to = "/about" exact activeClassName={s.active}>ABOUT</NavLink>
       </div>
-      <Route path ="/main" component={Main}/>
-      <Route path ="/question" component={Question}/>
-      <Route path ="/result" component={Result}/>
-      <Route path ="/about" component={About}/>
+      <Switch>
+      <Route exact path ="/" component={Home}/>
+      <Route exact path ="/question" component={Question}/>
+      <Route exact path ="/result" component={Result}/>
+      <Route exact path ="/about" component={About}/>
+      </Switch>
     </BrowserRouter>
   );
 }

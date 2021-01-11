@@ -1,9 +1,10 @@
 import React from 'react';
+import './../main.css';
 
 function About() {
   return (
-    <div>
-      <div>
+    <div className = "main">
+      <div className = "content">
           <p>about</p>
       </div>
     </div>

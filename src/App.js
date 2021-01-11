@@ -1,5 +1,4 @@
 import Header from './components/header';
-import Main from './components/main';
 import './App.css';
 
 function App() {
@@ -9,6 +8,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;

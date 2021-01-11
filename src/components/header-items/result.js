@@ -1,10 +1,11 @@
 import React from 'react';
+import './../main.css';
 
 function Result() {
   return (
     <div className = "main">
       <div className = "content">
-          <p>Result</p>
+          <p>result</p>
       </div>
     </div>
   );

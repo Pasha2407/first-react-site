@@ -4,20 +4,27 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    background-color:rgba(0,0,0,0.2); 
+    background-color:rgba(68, 75, 94, 0.97); 
+    position: fixed;
 }
 
-.header a {
+.link {
     padding: 10px;
-    font-size: 40px;
+    font-size: 35px;
     color: white;
     background: none;
     display: inline-flex;
     border:none;
-    margin-left: 15px;
+    margin-left: 30px;
     text-decoration: none;
 }
 
 .header a:hover {
     background-color: rgba(0,0,0,0.3);
+    border-radius: 15px;
+}
+
+.active {
+    border: ridge white;
+    border-radius: 15px;
 }

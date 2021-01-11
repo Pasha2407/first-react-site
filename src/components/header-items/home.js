@@ -1,7 +1,7 @@
 import React from 'react';
-import './main.css';
+import './../main.css';
 
-function Main() {
+function Home() {
   return (
     <div className = "main">
       <div className = "content">
@@ -11,4 +11,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Home;
