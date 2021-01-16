@@ -1,15 +1,15 @@
 import React from 'react';
-import './../main.css';
+import '../main.css';
 
-function Result() {
+function About() {
   return (
     <div className = "main">
       <div className = "content">
-          <p>result</p>
+          <p>about</p>
       </div>
     </div>
   );
 }
 
 
-export default Result;
+export default About;

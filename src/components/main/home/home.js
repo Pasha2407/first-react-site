@@ -1,11 +1,11 @@
 import React from 'react';
-import './../main.css';
+import '../main.css';
 
 function Home() {
   return (
     <div className = "main">
       <div className = "content">
-          <p>content</p>
+          <p>Please click on Question </p>
       </div>
     </div>
   );
